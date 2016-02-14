@@ -82,4 +82,6 @@
   <java-symbol type="style" name="Animation.Toast.SlideRightLeft" />
   <java-symbol type="style" name="Animation.Toast.SlideLeftRight" />
 
+  <!-- Hardware key binding -->
+  <java-symbol type="integer" name="config_deviceHardwareKeys" />
 </resources>

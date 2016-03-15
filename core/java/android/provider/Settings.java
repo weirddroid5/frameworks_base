@@ -5800,6 +5800,14 @@ public final class Settings {
         /** @hide */
         private static final Validator THEMING_SETTINGS_DASHBOARD_ICONS_VALIDATOR = ANY_INTEGER_VALIDATOR;
 
+        /**
+         * Whether user can swap navigation lateral keys.
+         * <p>
+         * Type: int (0 for false, 1 for true)
+         * @hide
+         */
+        public static final String SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
+
         /***************************
          * AICP System Settings end
          ***************************/

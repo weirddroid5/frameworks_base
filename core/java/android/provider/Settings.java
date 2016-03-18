@@ -5335,6 +5335,16 @@ public final class Settings {
          private static final Validator VOLUME_DIALOG_TIMEOUT_VALIDATOR =
                 new SettingsValidators.InclusiveIntegerRangeValidator(500, 10000);;
 
+        /** Whether to skip music track with volume rocker
+        /**
+        * @hide
+        */
+        public static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
+
+        /** @hide */
+        private static final Validator VOLUME_BUTTON_MUSIC_CONTROL_VALIDATOR =
+               BOOLEAN_VALIDATOR;
+
          /**
          * Statusbar AICP logo
          * @hide
@@ -5983,6 +5993,7 @@ public final class Settings {
             SLIM_RECENTS_BLACKLIST_VALUES,
             SLIM_RECENT_ENTER_EXIT_ANIMATION,
             THEMING_SETTINGS_DASHBOARD_ICONS,
+            VOLUME_BUTTON_MUSIC_CONTROL,
             // AICP Settings end
         };
 
@@ -6229,6 +6240,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_ENABLE);
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_TIMEOUT);
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_ON_TOUCH_ONLY);
+            PRIVATE_SETTINGS.add(VOLUME_BUTTON_MUSIC_CONTROL);
             // AICP Settings end
         }
 
@@ -6461,6 +6473,7 @@ public final class Settings {
             VALIDATORS.put(SLIM_RECENTS_BLACKLIST_VALUES, SLIM_RECENTS_BLACKLIST_VALUES_VALIDATOR);
             VALIDATORS.put(SLIM_RECENT_ENTER_EXIT_ANIMATION, SLIM_RECENT_ENTER_EXIT_ANIMATION_VALIDATOR);
             VALIDATORS.put(THEMING_SETTINGS_DASHBOARD_ICONS, THEMING_SETTINGS_DASHBOARD_ICONS_VALIDATOR);
+            VALIDATORS.put(VOLUME_BUTTON_MUSIC_CONTROL,VOLUME_BUTTON_MUSIC_CONTROL_VALIDATOR);
             // AICP Settings end
         }
 

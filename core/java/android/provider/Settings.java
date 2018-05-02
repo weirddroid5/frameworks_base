@@ -4542,6 +4542,12 @@ public final class Settings {
         public static final String BUTTON_BACKLIGHT_TIMEOUT = "button_backlight_timeout";
 
         /**
+         * Volume rocker wake
+         * @hide
+         */
+        public static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+
+        /**
          * @hide
          */
         public static final String BUTTON_BACKLIGHT_ON_TOUCH_ONLY = "button_backlight_on_touch_only";
